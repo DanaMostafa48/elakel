@@ -5,6 +5,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.Set;
+
 @Entity
 @Table(name = "meal")
 @Data
@@ -22,5 +24,9 @@ public class Meal {
     private float price;
 
     private Long restaurantId;
+    @ManyToMany(fetch = FetchType.EAGER)
+    private Set<Order> orders;
+
+
 
 }
