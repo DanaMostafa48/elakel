@@ -1,0 +1,740 @@
+{
+	"info": {
+		"_postman_id": "59bad7af-5ffb-428c-adcb-66e1e22fd32a",
+		"name": "tools",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26952452"
+	},
+	"item": [
+		{
+			"name": "REGISTERRUNNER",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"AMR\",\r\n    \"password\":\"password\",\r\n    \"username\":\"AMOR\",\r\n    \"status\":\"AVAILABLE\",\r\n    \"deliveryFee\":10.0\r\n\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/ToolsProject-1.0-SNAPSHOT/api/user/registerrunner",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ToolsProject-1.0-SNAPSHOT",
+						"api",
+						"user",
+						"registerrunner"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get runner by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/ToolsProject-1.0-SNAPSHOT/api/runner/getRunnerById/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ToolsProject-1.0-SNAPSHOT",
+						"api",
+						"runner",
+						"getRunnerById",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register restraunt",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"sOBHY\",\r\n    \"ownerId\":\"1\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/ToolsProject-1.0-SNAPSHOT/api/restaurant/addRestaurant",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ToolsProject-1.0-SNAPSHOT",
+						"api",
+						"restaurant",
+						"addRestaurant"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add meal",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n    \"name\": \"sarokh frakh\",\r\n    \"price\": \"105\",\r\n    \"restaurantId\":\"1\"\r\n   \r\n\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/ToolsProject-1.0-SNAPSHOT/api/meal/addMeal",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ToolsProject-1.0-SNAPSHOT",
+						"api",
+						"meal",
+						"addMeal"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register owner",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"username\": \"bahgat\",\r\n    \"password\": \"password1\",\r\n    \"name\": \"bahgat\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/ToolsProject-1.0-SNAPSHOT/api/user/registerowner",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ToolsProject-1.0-SNAPSHOT",
+						"api",
+						"user",
+						"registerowner"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "fimnalize order",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/ToolsProject-1.0-SNAPSHOT/api/order/makeOrder/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ToolsProject-1.0-SNAPSHOT",
+						"api",
+						"order",
+						"makeOrder",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "edit an order",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[5]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/ToolsProject-1.0-SNAPSHOT/api/order/editOrder/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ToolsProject-1.0-SNAPSHOT",
+						"api",
+						"order",
+						"editOrder",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add meals to the order",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/ToolsProject-1.0-SNAPSHOT/api/order/addMeals/1/1/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ToolsProject-1.0-SNAPSHOT",
+						"api",
+						"order",
+						"addMeals",
+						"1",
+						"1",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get restrauntby id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n  {\r\n    \"name\": \"Meal 1\",\r\n    \"price\": 10.99,\r\n    \"restaurantId\": 1\r\n  },\r\n  {\r\n    \"name\": \"Meal 2\",\r\n    \"price\": 15.99,\r\n    \"restaurantId\": 2\r\n  },\r\n  {\r\n    \"name\": \"Meal 3\",\r\n    \"price\": 12.99,\r\n    \"restaurantId\": 1\r\n  }\r\n]\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/ToolsProject-1.0-SNAPSHOT/api/restaurant/getRestaurant/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ToolsProject-1.0-SNAPSHOT",
+						"api",
+						"restaurant",
+						"getRestaurant",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get menue by restraunt id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/ToolsProject-1.0-SNAPSHOT/api/restaurant/getMealsByRestaurantId/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ToolsProject-1.0-SNAPSHOT",
+						"api",
+						"restaurant",
+						"getMealsByRestaurantId",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "start an order by getting order id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/ToolsProject-1.0-SNAPSHOT/api/order/StartOrder",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ToolsProject-1.0-SNAPSHOT",
+						"api",
+						"order",
+						"StartOrder"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cancel order",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/ToolsProject-1.0-SNAPSHOT/api/order/cancelOrder/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ToolsProject-1.0-SNAPSHOT",
+						"api",
+						"order",
+						"cancelOrder",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "mark runner state busy",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/ToolsProject-1.0-SNAPSHOT/api/runner/markBusy/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ToolsProject-1.0-SNAPSHOT",
+						"api",
+						"runner",
+						"markBusy",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "mark runner state availble",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/ToolsProject-1.0-SNAPSHOT/api/runner/markAvailable/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ToolsProject-1.0-SNAPSHOT",
+						"api",
+						"runner",
+						"markAvailable",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "mark order as completed",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/ToolsProject-1.0-SNAPSHOT/api/order/markCompleted/1/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ToolsProject-1.0-SNAPSHOT",
+						"api",
+						"order",
+						"markCompleted",
+						"1",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get number of completed trips runner",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/ToolsProject-1.0-SNAPSHOT/api/runner/completedTrips/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ToolsProject-1.0-SNAPSHOT",
+						"api",
+						"runner",
+						"completedTrips",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "restraunt report",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/ToolsProject-1.0-SNAPSHOT/api/restaurant/report/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ToolsProject-1.0-SNAPSHOT",
+						"api",
+						"restaurant",
+						"report",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "registerowner",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"bahgat\",\r\n    \"name\":\"bahgot\",\r\n    \"password\":\"passowrd\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/ToolsProject-1.0-SNAPSHOT/api/user/registerowner",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ToolsProject-1.0-SNAPSHOT",
+						"api",
+						"user",
+						"registerowner"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get meal by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/ToolsProject-1.0-SNAPSHOT/api/meal/getMealById/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ToolsProject-1.0-SNAPSHOT",
+						"api",
+						"meal",
+						"getMealById",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all meals",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/ToolsProject-1.0-SNAPSHOT/api/meal/getAllMeals",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ToolsProject-1.0-SNAPSHOT",
+						"api",
+						"meal",
+						"getAllMeals"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete meal",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/ToolsProject-1.0-SNAPSHOT/api/meal/deleteMeal/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ToolsProject-1.0-SNAPSHOT",
+						"api",
+						"meal",
+						"deleteMeal",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update meal",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/ToolsProject-1.0-SNAPSHOT/api/meal/updateMeal",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ToolsProject-1.0-SNAPSHOT",
+						"api",
+						"meal",
+						"updateMeal"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all restraunt",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/ToolsProject-1.0-SNAPSHOT/api/restaurant/getAllRestaurants",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ToolsProject-1.0-SNAPSHOT",
+						"api",
+						"restaurant",
+						"getAllRestaurants"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "find restraunt by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/ToolsProject-1.0-SNAPSHOT/api/restaurant/getRestaurant/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ToolsProject-1.0-SNAPSHOT",
+						"api",
+						"restaurant",
+						"getRestaurant",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updaterestraunt",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/ToolsProject-1.0-SNAPSHOT/api/restaurant/updateRestaurant",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ToolsProject-1.0-SNAPSHOT",
+						"api",
+						"restaurant",
+						"updateRestaurant"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delte restraunt",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/ToolsProject-1.0-SNAPSHOT/api/restaurant/deleteRestaurant",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ToolsProject-1.0-SNAPSHOT",
+						"api",
+						"restaurant",
+						"deleteRestaurant"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"bahgat\",\r\n    \"name\":\"bahgot\",\r\n    \"password\":\"passowrd\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/ToolsProject-1.0-SNAPSHOT/api/user/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ToolsProject-1.0-SNAPSHOT",
+						"api",
+						"user",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user login",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"bahgat\",\r\n   \r\n    \"password\":\"passowrd\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/ToolsProject-1.0-SNAPSHOT/api/user/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ToolsProject-1.0-SNAPSHOT",
+						"api",
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
